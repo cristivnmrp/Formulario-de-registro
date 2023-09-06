@@ -6,6 +6,7 @@
     <title>Registration Form</title>
     </head>
     <body>
+        <h1>Registration Form</h1>
         <form action="" method="post">
             <div>
                 <label>First Name: *</label>
@@ -31,19 +32,33 @@
                 <label>Birthday: </label>
                 <input type="date" name="birthday">
             </div>
+            <h5>Gender Identity:</h5>
             <div>
-                <label for="masculino"> Masculino: </label>
-                <input type="radio" name="genero" id="masculino">
-                <label for="femenino"> Femenino: </label>
-                <input type="radio" name="genero" id="femenino">
+                <label for="masculino"> Male </label>
+                <input type="radio" name="gender" id="male">
+                <label for="femenino"> Female </label>
+                <input type="radio" name="gender" id="female">
+                <label for="masculino"> Non-binary </label>
+                <input type="radio" name="gender" id="non-binary">
+                <label for="femenino"> I prefer not to answer </label>
+                <input type="radio" name="gender" id="not-to-answer">
+            </div>
+            <h5>A short description about myself: </h5>
+            <div>
+                <textarea name="description" id="description" cols="30" rows="3"></textarea>
+            </div>
+                <label for="language">Favorite Language: </label>
+                <select name="language" id="language">
+                    <option value="javascript"> JavaScript</option>
+                </select>
+            <div>
+                <input type="checkbox" name="offers" id="offers" checked>
+                <label for="offers"> Yes, I would like to receive periodic email updates</label>
             </div>
             <div>
-                <input type="checkbox" name="offers" 
-                id="offers" checked >
-                <label for="offers">Me gustaría 
-                recibir ofertas por correo!</label>
+                <input type="submit" value="Create Account">
             </div>
-            <input type="submit" value="Sign Up!" >
+            <h5>* Indicates a required field</h5>
         </form>
         
     </body>
